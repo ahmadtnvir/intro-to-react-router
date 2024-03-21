@@ -10,6 +10,7 @@ import Home from './Component/Home/Home';
 import About from './Component/About/About';
 import Contact from './Component/Contact/Contact';
 import Menu from './Component/Menu/Menu';
+import Users from './Component/Users/Users';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/menu',
         element: <Menu></Menu>
+      },
+      {
+        path: '/users',
+        element: <Users></Users>
       }
     ]
   },
