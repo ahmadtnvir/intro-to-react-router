@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -6,11 +6,11 @@ const Header = () => {
     <div>
       <nav>
         <h2>Welcome to my website!</h2>
-        <Link to='/menu'>Menu</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/contact'>Contact</Link>
-        <Link to ='/users'>Users</Link>
-        <Link to='/posts'>Posts</Link>
+        <NavLink to={'/menu'}>Menu</NavLink>
+        <NavLink to={'/about'}>About</NavLink>
+        <NavLink to={'/contact'}>Contact</NavLink>
+        <NavLink to={'/users'}>Users</NavLink>
+        <NavLink to={'/posts'}>Posts</NavLink>
       </nav>
     </div>
   );
